@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shorcut icon" type="x-icon" href="logo.png">
+<title>Nancy Tools</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#000;
+    color:#fff;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#80f175;
+}
+
+/* Hero */
+
+.hero{
+    padding:80px 5%;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#337c90;
+}
+
+.hero p{
+    margin-top:15px;
+    line-height:1.8;
+}
+
+/* Sections */
+
+section{
+    padding:60px 5%;
+}
+
+.section-title{
+    color:#337c90;
+    margin-bottom:20px;
+}
+
+/* Cards */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+    background:#fff;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:40%;
+    height:120px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    text-align:center;
+    color:#337c90;
+}
+
+/* Quality */
+
+.quality{
+    background:#f7f7f7;
+}
+
+/* Contact */
+
+.contact{
+    background:#f5f5f5;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-info p{
+    margin:10px 0;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    padding:12px;
+    background:#337c90;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#245d6d;
+}
+
+/* Map */
+
+iframe{
+    width:100%;
+    height:350px;
+    border:none;
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        justify-content:center;
+        margin-top:10px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">NANCY TOOLS</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#two">Two Wheeler</a>
+<a href="#four">Four Wheeler</a>
+<a href="#tractor">Tractor</a>
+<a href="#quality">Quality</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>NANCY TOOLS</h1>
+
+<p>
+Leading Supplier of Two Wheeler, Four Wheeler and Tractor Parts
+</p>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">Company Profile</h2>
+
+<p>
+Nancy Tools is a trusted manufacturer and supplier of precision-engineered
+automotive and tractor components. We deliver quality products, competitive
+pricing, and reliable service to customers across India.
+</p>
+
+</section>
+
+<section id="two">
+
+<h2 class="section-title">Two Wheeler Parts</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<img src="pillion.png">
+<h3>Stay A Pillion</h3>
+</div>
+
+<div class="card">
+<img src="mu.png">
+<h3>Stay B Cross Pipe</h3>
+</div>
+
+<div class="card">
+<img src="lr.png">
+<h3>Stay A Cross Pipe L-R</h3>
+</div>
+
+<div class="card">
+<img src="b.png">
+<h3>Stay B Pillion</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="four">
+
+<h2 class="section-title">Four Wheeler Parts</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<img src="inner.png">
+<h3>Bracket Inner</h3>
+</div>
+
+<div class="card">
+<img src="outer.png">
+<h3>Bracket Outer</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="tractor">
+
+<h2 class="section-title">Tractor Parts</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<img src="clutch.png">
+<h3>Side Clutch Lever</h3>
+</div>
+
+<div class="card">
+<img src="part1.png">
+<h3>Tractor Component</h3>
+</div>
+
+<div class="card">
+<img src="part2.png">
+<h3>Tractor Component</h3>
+</div>
+
+<div class="card">
+<img src="part3.png">
+<h3>Spacer</h3>
+</div>
+
+<div class="card">
+<img src="part4.png">
+<h3>Brake Rod</h3>
+</div>
+
+<div class="card">
+<img src="strip.png">
+<h3>Bracket Strip Assy</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="quality" class="quality">
+
+<h2 class="section-title">Quality</h2>
+
+<p>
+Nancy Tools is committed to excellence in manufacturing. Our quality control
+process ensures every component meets industry standards for performance,
+durability, and reliability.
+</p>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<p><strong>Nancy Tools</strong></p>
+
+<p>V.P.O Basai Enclave</p>
+
+<p>Gurugram, Haryana 122001</p>
+
+<p>Phone: +91 9582581717</p>
+
+<p>Email: nancytool17@gmail.com</p>
+
+</div>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+<input type="hidden" name="access_key" value="d4d1aa13-1562-4db0-b544-c4ecc1c250dc">
+
+<input type="text" name="name" placeholder="Name" required>
+
+<input type="text" name="phone" placeholder="Phone Number">
+
+<input type="email" name="email" placeholder="Email" required>
+
+<textarea rows="5" name="message" placeholder="Message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d219.23764112542236!2d77.0218181876756!3d28.45537672601496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1902232380d7%3A0xe81663c85d88dc40!2sNancy%20tools!5e0!3m2!1sen!2sin!4v1751025455820!5m2!1sen!2sin">
+</iframe>
+
+</section>
+
+<footer>
+
+© 2026 Nancy Tools. All Rights Reserved.
+
+</footer>
+
+</body>
+</html>
